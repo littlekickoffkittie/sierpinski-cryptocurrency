@@ -39,7 +39,7 @@ impl GenesisTriad {
         let area = (3.0_f64).sqrt() * side_length * side_length / 4.0;
         
         GenesisTriad {
-            vertices,
+            vertices: vertices.clone(),
             area,
             depth: 0,
             id: Self::generate_id(&vertices),
